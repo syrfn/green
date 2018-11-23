@@ -1,0 +1,35 @@
+[
+    {
+        "type": "DATE",
+        "name": "order_date",
+        "mode": "NULLABLE"
+    },
+    {
+        "type": "INTEGER",
+        "name": "no_order_type",
+        "mode": "NULLABLE",
+        "description":""
+    },
+    {
+        "type": "RECORD",
+        "name": "detail",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "order_type",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "total_customer",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "type": "STRING",
+        "name": "order_payment",
+        "mode": "NULLABLE"
+    }
+]
